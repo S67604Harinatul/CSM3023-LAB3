@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Car Loan</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Perform Car Loans Calculation</h1>
+        <form id="calculate" action="processCalculateCarLoan.jsp" method="post" onsubmit="return checkLoanAmount()">
+            <fieldset>
+                <legend>Loan Calculation</legend>
+                <label for="loanAmount">Loan Amount*</label>
+                <input type="text" id="loanAmount" name="loanAmount" size="4" placeholder="Amount"><br/>
+                
+                <label for="period">Period</label>
+                <select id="period" name="period">
+                    <option value="3">3 years</option>
+                    <option value="5">4 years</option>
+                    <option value="4">5 years</option>
+                    <option value="7">7 years</option>
+                </select></br>
+                
+                <p><input type="submit" id="btnSubmit" value="Submit"/>
+                    <input type="reset" id="btnCancel" value="Cancel"/>
+                </p>    
+                    
+            </fieldset>
+        </form>  
+    </body>
+</html>
